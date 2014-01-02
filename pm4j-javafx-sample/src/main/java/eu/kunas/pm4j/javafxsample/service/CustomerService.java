@@ -41,7 +41,7 @@ public class CustomerService {
         for (CustomerDto customer : db.values()){
             SearchResultItemDto item = new SearchResultItemDto();
 
-            item.setKey(new BusinessKey(1L));
+            item.setKey(new BusinessKey(customer.getId()));
             item.getDataset().add(customer.getFirstName());
             resultDto.getResultSet().add(item);
         }
