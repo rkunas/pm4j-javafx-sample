@@ -22,10 +22,9 @@ public class CustomerSearchPm extends PmBeanBase<SearchResultDto> {
             CustomerSearchPm searchpm = (CustomerSearchPm)getPmParent();
             CustomerDialogPm dialogpm =  (CustomerDialogPm) searchpm.getPmParent();
 
-            CustomerDto c = new CustomerDto();
-            c.setFirstName("Ramazan");
-            c.setLastName("Kunas");
-            dialogpm.details.setPmBean(c);
+            CustomerDialogPm dialogPm = (CustomerDialogPm) getPmParent().getPmParent();
+
+            dialogpm.details.setPmBean(dialogPm.customerService.getCustomer(selected.getKey().getId()));
         }
     };
 
