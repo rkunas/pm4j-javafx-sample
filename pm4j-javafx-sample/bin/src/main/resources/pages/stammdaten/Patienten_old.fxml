@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="810.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <VBox id="vBox1" prefHeight="502.0" prefWidth="517.9999000000025" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ToolBar id="toolBar1" />
+        <AnchorPane id="anchorPane1" prefHeight="575.0" prefWidth="810.0" VBox.vgrow="ALWAYS">
+          <children>
+            <Rectangle id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="#a5ff33" height="533.0" layoutX="11.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="597.0" />
+            <TextField id="textField" layoutX="115.0" layoutY="123.0" prefHeight="20.0" prefWidth="66.0" text="TextField" />
+            <CheckBox id="checkBox1" layoutX="115.0" layoutY="151.0" text="International" />
+            <TextField id="textField" layoutX="190.0" layoutY="123.0" prefHeight="20.0" prefWidth="126.0" text="TextField" />
+            <Label id="label1" layoutX="20.0" layoutY="63.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Name" />
+            <Label id="label1" layoutX="20.0" layoutY="123.0" prefHeight="14.0" prefWidth="86.99990844726562" text="PLZ/Ort" />
+            <TextField id="textField" layoutX="115.0" layoutY="83.0" prefHeight="20.0" prefWidth="201.0" text="TextField" />
+            <RadioButton id="radioButton1" layoutX="356.0" layoutY="83.0" prefHeight="14.0" prefWidth="87.0" text="Männlich" />
+            <Label id="label1" layoutX="20.0" layoutY="103.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Straße" />
+            <TextField id="textField" layoutX="115.0" layoutY="103.0" prefHeight="20.0" prefWidth="201.0" text="TextField" />
+            <TextField id="textField" layoutX="115.0" layoutY="43.0" prefHeight="20.0" prefWidth="79.00009999999747" text="TextField" />
+            <RadioButton id="radioButton1" layoutX="356.0" layoutY="103.0" prefHeight="14.0" prefWidth="87.0" text="Unbekannt" />
+            <Label id="label1" layoutX="20.0" layoutY="83.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Vorname" />
+            <RadioButton id="radioButton1" layoutX="355.0" layoutY="66.0" prefHeight="14.0" prefWidth="87.0" text="Weiblich" />
+            <TextField id="textField" layoutX="115.0" layoutY="63.0" prefHeight="20.0" prefWidth="201.0" text="TextField" />
+            <Label id="label2" layoutX="20.0" layoutY="9.0" text="Patient">
+              <font>
+                <Font size="15.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label id="label1" layoutX="20.0" layoutY="43.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Geburtsdatum" />
+            <TextField id="textField" layoutX="115.0" layoutY="208.0" prefHeight="20.0" prefWidth="201.0" text="TextField" />
+            <Label id="label1" layoutX="28.0" layoutY="208.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Strasse" />
+            <Label id="label1" layoutX="28.0" layoutY="237.0" prefHeight="14.0" prefWidth="86.99990844726562" text="PLZ / Ort" />
+            <TextField id="textField" layoutX="115.0" layoutY="234.0" prefHeight="20.0" prefWidth="66.0" text="TextField" />
+            <Label id="label1" layoutX="28.0" layoutY="265.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Land" />
+            <TextField id="textField" layoutX="115.0" layoutY="262.0" prefHeight="20.0" prefWidth="201.0" text="TextField" />
+            <TextField id="textField" layoutX="183.0" layoutY="234.0" prefHeight="20.0" prefWidth="133.0" text="TextField" />
+          </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

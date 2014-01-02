@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="view" prefHeight="1000.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml" fx:controller="eu.kunas.pm4j.javafxsample.controller.OrganizationController">
+  <children>
+    <VBox id="vBox1" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <AnchorPane id="anchorPane1" prefHeight="1000.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+          <children>
+            <HBox id="hBox2" prefHeight="600.0" prefWidth="514.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+              <children>
+                <TabPane fx:id="tabsTabPane" prefHeight="950.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+                  <tabs>
+                    <Tab fx:id="searchTab" style="" text="Search">
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="">
+                          <children>
+                            <Button fx:id="viewButton" mnemonicParsing="false" onAction="#viewDetails" prefHeight="25.0" prefWidth="100.0" text="View" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="30.0" />
+                            <TableView id="resultTable" fx:id="resultTableView" prefHeight="785.0" prefWidth="972.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="100.0" />
+                            <TextField id="organizationNameTextField" fx:id="organizationNameSearchTextField" prefWidth="200.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="38.0" />
+                            <Label text="Organization" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="40.0" />
+                            <Button id="viewButton" fx:id="searchButton" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="100.0" text="Search" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="50.0" />
+                            <Button id="viewButton" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="100.0" text="Clear" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0" />
+                          </children>
+                        </AnchorPane>
+                      </content>
+                    </Tab>
+                    <Tab fx:id="detailTab" style="" text="Overview">
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="&#10;">
+                          <children>
+                            <HBox id="bvfield" fx:id="validityArea" prefHeight="105.0" prefWidth="460.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="84.0" />
+                            <HBox fx:id="nameArea" layoutX="40.0" layoutY="14.0" prefHeight="35.0" prefWidth="460.0" />
+                            <HBox id="nameArea" fx:id="loginNameArea" layoutX="40.0" layoutY="49.0" prefHeight="35.0" prefWidth="460.0" />
+                          </children>
+                        </AnchorPane>
+                      </content>
+                    </Tab>
+                  </tabs>
+                  <HBox.margin>
+                    <Insets />
+                  </HBox.margin>
+                </TabPane>
+              </children>
+            </HBox>
+            <ToolBar prefHeight="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <Button fx:id="newButton" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#newEntity" text="New" />
+                <Button id="saveButton" fx:id="saveOrganization" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#saveEntity" text="Save" />
+                <Button fx:id="deleteButton" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#deleteEntity" style="" text="Delete" />
+              </items>
+            </ToolBar>
+          </children>
+          <VBox.margin>
+            <Insets />
+          </VBox.margin>
+        </AnchorPane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

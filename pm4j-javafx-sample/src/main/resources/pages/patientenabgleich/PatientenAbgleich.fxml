@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="810.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <VBox id="vBox1" prefHeight="502.0" prefWidth="517.9999000000025" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ToolBar id="toolBar1">
+          <items>
+            <Button id="button1" text="Button" />
+          </items>
+        </ToolBar>
+        <AnchorPane id="anchorPane1" prefHeight="575.0" prefWidth="810.0" VBox.vgrow="ALWAYS">
+          <children>
+            <Rectangle id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="#a5ff33" height="533.0" layoutX="10.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="597.0" />
+            <TextField id="textField" layoutX="115.0" layoutY="123.0" prefHeight="20.0" prefWidth="66.0" text="TextField" />
+            <CheckBox id="checkBox1" layoutX="115.0" layoutY="151.0" text="International" />
+            <TextField id="textField" layoutX="190.0" layoutY="123.0" prefHeight="20.0" prefWidth="126.0" text="TextField" />
+            <Label id="label1" layoutX="20.0" layoutY="63.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Name" />
+            <Label id="label1" layoutX="20.0" layoutY="123.0" prefHeight="14.0" prefWidth="86.99990844726562" text="PLZ/Ort" />
+            <TextField id="textField" layoutX="115.0" layoutY="83.0" prefHeight="20.0" prefWidth="201.0" text="TextField" />
+            <RadioButton id="radioButton1" layoutX="356.0" layoutY="83.0" prefHeight="14.0" prefWidth="87.0" text="Männlich" />
+            <Label id="label1" layoutX="20.0" layoutY="103.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Straße" />
+            <TextField id="textField" layoutX="115.0" layoutY="103.0" prefHeight="20.0" prefWidth="201.0" text="TextField" />
+            <TextField id="textField" layoutX="115.0" layoutY="43.0" prefHeight="20.0" prefWidth="79.00009999999747" text="TextField" />
+            <RadioButton id="radioButton1" layoutX="356.0" layoutY="103.0" prefHeight="14.0" prefWidth="87.0" text="Unbekannt" />
+            <Label id="label1" layoutX="20.0" layoutY="83.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Vorname" />
+            <RadioButton id="radioButton1" layoutX="355.0" layoutY="66.0" prefHeight="14.0" prefWidth="87.0" text="Weiblich" />
+            <TextField id="textField" layoutX="115.0" layoutY="63.0" prefHeight="20.0" prefWidth="201.0" text="TextField" />
+            <Label id="label2" layoutX="20.0" layoutY="9.0" text="Patient">
+              <font>
+                <Font size="15.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label id="label1" layoutX="20.0" layoutY="43.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Geburtsdatum" />
+            <TableView id="tableView1" layoutX="615.0" layoutY="30.0" prefHeight="533.0" prefWidth="188.0" />
+            <TabPane id="tabPane1" layoutX="15.0" layoutY="177.0" prefHeight="222.0" prefWidth="588.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab id="tab1" text="Kassenpatient">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="588.0">
+                      <children>
+                        <Label id="label1" layoutX="10.0" layoutY="10.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Kassennummer" />
+                        <TextField id="textField" layoutX="105.0" layoutY="10.0" prefHeight="20.0" prefWidth="98.0" text="TextField" />
+                        <Label id="label1" layoutX="217.0" layoutY="14.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Kassenname" />
+                        <TextField id="textField" layoutX="312.0" layoutY="14.0" prefHeight="20.0" prefWidth="275.4000244140625" text="TextField" />
+                        <Label id="label1" alignment="CENTER" layoutX="10.0" layoutY="44.0" prefHeight="14.0" prefWidth="80.0" text="Kassen-IK" />
+                        <TextField id="textField" alignment="CENTER" layoutX="10.0" layoutY="58.0" prefHeight="20.0" prefWidth="79.00009999999747" text="TextField" />
+                        <Label id="label1" alignment="CENTER" layoutX="90.0" layoutY="44.0" prefHeight="14.0" prefWidth="113.0" text="Versichertennummer" />
+                        <TextField id="textField" alignment="CENTER" layoutX="90.0" layoutY="58.0" prefHeight="20.0" prefWidth="113.0" text="TextField" />
+                        <Label id="label1" alignment="CENTER" layoutX="204.0" layoutY="44.0" prefHeight="14.0" prefWidth="66.0" text="Status" />
+                        <TextField id="textField" alignment="CENTER" layoutX="204.0" layoutY="58.0" prefHeight="20.0" prefWidth="66.0" text="TextField" />
+                        <Label id="label1" alignment="CENTER" layoutX="271.0" layoutY="44.0" prefHeight="14.0" prefWidth="66.0" text="OW Status" />
+                        <TextField id="textField" alignment="CENTER" layoutX="271.0" layoutY="58.0" prefHeight="20.0" prefWidth="66.0" text="TextField" />
+                        <Line id="line1" endX="475.0" endY="-7.0" layoutX="111.0" layoutY="44.0" startX="-104.0" startY="-7.0" strokeWidth="2.8" />
+                        <Label id="label1" alignment="CENTER" layoutX="337.0" layoutY="44.0" prefHeight="14.0" prefWidth="66.0" text="KVK Gültig" />
+                        <TextField id="textField" alignment="CENTER" layoutX="337.0" layoutY="58.0" prefHeight="20.0" prefWidth="66.0" text="TextField" />
+                        <Label id="label1" alignment="CENTER" layoutX="403.0" layoutY="44.0" prefHeight="14.0" prefWidth="184.4000244140625" text="Kostenträgergruppe" />
+                        <TextField id="textField" alignment="CENTER" layoutX="433.0" layoutY="57.0" prefHeight="20.0" prefWidth="52.0" text="TextField" />
+                        <TextField id="textField" alignment="CENTER" layoutX="535.0" layoutY="57.0" prefHeight="20.0" prefWidth="52.0" text="TextField" />
+                        <TextField id="textField" alignment="CENTER" layoutX="485.0" layoutY="57.0" prefHeight="20.0" prefWidth="52.0" text="TextField" />
+                        <Line id="line1" endX="475.0" endY="-7.0" layoutX="107.0" layoutY="104.0" startX="-53.0" startY="-9.0" strokeWidth="2.8" />
+                        <Label id="label1" layoutX="10.0" layoutY="87.0" prefHeight="14.0" prefWidth="86.99990844726562" text="Auftrag" />
+                        <TextField id="textField" alignment="CENTER" layoutX="10.0" layoutY="108.0" prefHeight="20.0" prefWidth="188.0" text="TextField" />
+                        <ChoiceBox id="choiceBox1" layoutX="403.0" layoutY="60.0" minWidth="28.0" prefHeight="18.0" prefWidth="28.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Item 1" />
+                              <String fx:value="Item 2" />
+                              <String fx:value="Item 3" />
+                            </FXCollections>
+                          </items>
+                        </ChoiceBox>
+                        <ComboBox id="comboBox1" layoutX="201.0" layoutY="111.0" prefHeight="19.0" prefWidth="136.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Item 1" />
+                              <String fx:value="Item 2" />
+                              <String fx:value="Item 3" />
+                            </FXCollections>
+                          </items>
+                        </ComboBox>
+                        <Label id="label1" alignment="CENTER" layoutX="365.0" layoutY="112.0" prefHeight="14.0" prefWidth="52.0" text="BSNR" />
+                        <ComboBox id="comboBox1" layoutX="428.0" layoutY="109.0" prefHeight="19.0" prefWidth="136.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Item 1" />
+                              <String fx:value="Item 2" />
+                              <String fx:value="Item 3" />
+                            </FXCollections>
+                          </items>
+                        </ComboBox>
+                        <Label id="label1" alignment="CENTER" layoutX="365.0" layoutY="133.0" prefHeight="14.0" prefWidth="52.0" text="LANR" />
+                        <ComboBox id="comboBox1" layoutX="428.0" layoutY="130.0" prefHeight="19.0" prefWidth="136.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Item 1" />
+                              <String fx:value="Item 2" />
+                              <String fx:value="Item 3" />
+                            </FXCollections>
+                          </items>
+                        </ComboBox>
+                        <Label id="label1" alignment="CENTER" layoutX="10.0" layoutY="149.0" prefHeight="14.0" prefWidth="113.0" text="Schein gültig von / bis" />
+                        <TextField id="textField" alignment="CENTER" layoutX="10.0" layoutY="163.0" prefHeight="20.0" prefWidth="66.0" text="TextField" />
+                        <TextField id="textField" alignment="CENTER" layoutX="81.0" layoutY="163.0" prefHeight="20.0" prefWidth="66.0" text="TextField" />
+                        <Label id="label1" alignment="CENTER" layoutX="68.0" layoutY="166.0" prefHeight="14.0" prefWidth="17.0" text="/" />
+                        <Label id="label1" alignment="CENTER" layoutX="148.0" layoutY="149.0" prefHeight="14.0" prefWidth="113.0" text="Personengruppe" />
+                        <ComboBox id="comboBox1" layoutX="161.0" layoutY="163.0" prefHeight="19.0" prefWidth="98.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Item 1" />
+                              <String fx:value="Item 2" />
+                              <String fx:value="Item 3" />
+                            </FXCollections>
+                          </items>
+                        </ComboBox>
+                        <TextField id="textField" alignment="CENTER" layoutX="261.0" layoutY="163.0" prefHeight="20.0" prefWidth="28.0" text="0" />
+                        <Label id="label1" alignment="CENTER" layoutX="304.0" layoutY="150.0" prefHeight="14.0" prefWidth="98.00009999999747" text="SKT Zusatz" />
+                        <ComboBox id="comboBox1" layoutX="302.0" layoutY="164.0" prefHeight="19.0" prefWidth="98.0">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Item 1" />
+                              <String fx:value="Item 2" />
+                              <String fx:value="Item 3" />
+                            </FXCollections>
+                          </items>
+                        </ComboBox>
+                        <TextField id="textField" alignment="CENTER" layoutX="428.0" layoutY="163.0" prefHeight="20.0" prefWidth="136.0" text="0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab id="tab2" text="Privatpatient">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <Label id="label2" font="$x1" layoutX="607.0" layoutY="-4.0" prefHeight="28.0" prefWidth="126.0" text="Anforderungen" />
+            <Label id="label2" font="$x1" layoutX="14.0" layoutY="408.0" text="Material" />
+          </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

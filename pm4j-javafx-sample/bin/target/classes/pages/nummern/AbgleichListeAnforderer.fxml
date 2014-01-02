@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <Label id="label1" layoutX="14.0" layoutY="14.0" text="Abrechnender Arzt:" />
+    <TextField id="textField" disable="true" layoutX="117.0" layoutY="11.0" prefHeight="20.0" prefWidth="454.0" text="TextField" />
+    <Label id="label1" layoutX="14.0" layoutY="67.0" prefHeight="14.0" prefWidth="88.0" text="Einsendersuche:" />
+    <Label id="label2" layoutX="14.0" layoutY="41.0" text="Einsender" />
+    <TextField id="textField" layoutX="204.0" layoutY="64.0" prefHeight="20.0" prefWidth="113.0" text="TextField" />
+    <TableView id="tableView1" layoutX="117.0" layoutY="98.0" prefHeight="147.0" prefWidth="453.0000999999975" />
+    <Label id="label1" layoutX="14.0" layoutY="274.0" prefHeight="14.0" prefWidth="88.0" text="Eingangsdatum" />
+    <TextField id="textField" layoutX="189.0" layoutY="271.0" prefWidth="200.0" text="TextField" />
+    <Label id="label1" layoutX="14.0" layoutY="302.0" prefHeight="14.0" prefWidth="175.0" text="Erste Eingangsnummer" />
+    <TextField id="textField" layoutX="189.0" layoutY="299.0" prefWidth="200.0" text="TextField" />
+    <Label id="label1" layoutX="15.0" layoutY="329.0" prefHeight="14.0" prefWidth="175.0" text="Anzahl Proben" />
+    <TextField id="textField" layoutX="190.0" layoutY="326.0" prefWidth="200.0" text="TextField" />
+    <Label id="label1" layoutX="14.0" layoutY="357.0" prefHeight="14.0" prefWidth="175.0" text="Letzte Eingangsnummer" />
+    <TextField id="textField" layoutX="190.0" layoutY="354.0" prefWidth="200.0" text="TextField" />
+    <Button id="button1" layoutX="10.0" layoutY="422.0" prefHeight="29.0" prefWidth="180.0" text="Weitere Nummern eingeben" />
+    <Button id="button1" layoutX="199.0" layoutY="422.0" prefHeight="29.0" prefWidth="180.0" text="Nummern anlegen und beenden" />
+    <Button id="button1" layoutX="391.0" layoutY="422.0" prefHeight="29.0" prefWidth="180.0" text="Vorgang abbrechen" />
+    <ChoiceBox id="choiceBox1" layoutX="344.0" layoutY="64.0" prefHeight="18.0" prefWidth="227.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Label id="label2" layoutX="344.0" layoutY="41.0" prefHeight="14.0" prefWidth="175.0" text="Auswahl Anforderungsart" />
+    <ChoiceBox id="choiceBox1" layoutX="117.0" layoutY="65.0" prefHeight="18.0" prefWidth="72.00009999999747">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+  </children>
+</AnchorPane>

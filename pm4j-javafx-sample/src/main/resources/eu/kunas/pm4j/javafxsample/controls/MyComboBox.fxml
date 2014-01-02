@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="view" maxHeight="30.0" maxWidth="380.0" minHeight="30.0" minWidth="380.0" prefHeight="30.0" prefWidth="380.0" xmlns:fx="http://javafx.com/fxml" fx:controller="eu.kunas.pm4j.javafxsample.controls.MyComboBox">
+  <children>
+    <HBox prefHeight="53.999900000002526" prefWidth="350.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label fx:id="fieldLabel" prefHeight="25.0" prefWidth="149.0" text="LABLABEL" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+        <ComboBox fx:id="combobox" prefWidth="202.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+          <HBox.margin>
+            <Insets bottom="2.0" top="2.0" />
+          </HBox.margin>
+        </ComboBox>
+        <ImageView fx:id="errorIcon" disable="false" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" visible="false">
+          <image>
+            <Image url="@/images/erroricon.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+      </children>
+      <padding>
+        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </padding>
+    </HBox>
+  </children>
+</AnchorPane>
