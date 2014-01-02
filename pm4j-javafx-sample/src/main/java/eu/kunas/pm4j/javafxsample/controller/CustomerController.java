@@ -56,8 +56,8 @@ public class CustomerController implements Initializable {
         firstname = new MyTextFieldBuilder().withBindPm(customerDialogPm.details.firstName).build();
         lastname = new MyTextFieldBuilder().withBindPm(customerDialogPm.details.lastName).build();
 
-        saveButton = new MyButtonBuilder().withBindPm(customerDialogPm.saveCommand).build();
-        newButton = new MyButtonBuilder().withBindPm(customerDialogPm.newCommand).withRegisterOnAction(lastname).withRegisterOnAction(firstname).build();
+        saveButton = new MyButtonBuilder().withBindPm(customerDialogPm.saveCommand).withRegisterOnAction(results).build();
+        newButton = new MyButtonBuilder().withBindPm(customerDialogPm.newCommand).withRegisterOnAction(lastname). withRegisterOnAction(firstname).build();
         deleteButton = new MyButtonBuilder().withBindPm(customerDialogPm.deleteCommand).build();
 
         newButton.refresh();

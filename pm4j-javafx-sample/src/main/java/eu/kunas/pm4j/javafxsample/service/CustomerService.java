@@ -54,6 +54,9 @@ public class CustomerService {
     }
 
     public void saveCustomer(CustomerDto dto){
+        if(dto.getId() == null){
+            dto.setId(counter++);
+        }
         db.put(dto.getId(),dto);
     }
 
