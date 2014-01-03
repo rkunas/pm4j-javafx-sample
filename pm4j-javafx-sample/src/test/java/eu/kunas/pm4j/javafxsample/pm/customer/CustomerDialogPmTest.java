@@ -18,6 +18,7 @@ public class CustomerDialogPmTest {
     @Before
     public void before(){
         customerDialogPm.customerService = customerService;
+
     }
 
     @Test
@@ -30,5 +31,12 @@ public class CustomerDialogPmTest {
         customerDialogPm.newCommand.doIt();
 
         Assert.assertNotNull(customerDialogPm.details.getPmBean());
+        Assert.assertNull(customerDialogPm.details.getPmBean().getId());
+
+        customerDialogPm.details.firstName.setValueAsString("Test1");
+        customerDialogPm.details.lastName.setValueAsString("Test1");
+        customerDialogPm.saveCommand.doIt();
+
+        Assert.assertEquals(3,customerService.seach().getResultSet().size());
     }
 }
