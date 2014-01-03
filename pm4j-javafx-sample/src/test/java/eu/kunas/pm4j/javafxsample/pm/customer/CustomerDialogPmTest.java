@@ -18,7 +18,6 @@ public class CustomerDialogPmTest {
     @Before
     public void before(){
         customerDialogPm.customerService = customerService;
-        customerDialogPm.init();
     }
 
     @Test

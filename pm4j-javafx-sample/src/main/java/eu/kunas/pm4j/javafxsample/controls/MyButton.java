@@ -43,8 +43,11 @@ public class MyButton implements Initializable, MyControl {
         if (this.doItControls == null) {
             this.doItControls = new ArrayList<MyControl>();
         }
+        if(control != null){
+            this.doItControls.add(control);
+        }
 
-        this.doItControls.add(control);
+
     }
 
     private void onActionRefresh() {

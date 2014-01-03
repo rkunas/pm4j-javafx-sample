@@ -18,12 +18,8 @@ public class CustomerDialogPm extends PmConversationImpl {
 
     public final CustomerSearchPm searchPm = new CustomerSearchPm(this);
 
-    public void init(){
-        searchPm.setPmBean(customerService.seach());
-    }
-
     @PmTitleCfg(title = "New")
-    public final  PmCommand newCommand = new PmCommandImpl(this){
+    public final PmCommand newCommand = new PmCommandImpl(this) {
 
         @Override
         protected void doItImpl() throws Exception {
@@ -34,25 +30,36 @@ public class CustomerDialogPm extends PmConversationImpl {
 
     @PmTitleCfg(title = "Save")
     @PmCommandCfg(beforeDo = PmCommandCfg.BEFORE_DO.VALIDATE)
-    public  final PmCommand saveCommand = new PmCommandImpl(this){
+    public final PmCommand saveCommand = new PmCommandImpl(this) {
 
         @Override
         protected void doItImpl() throws Exception {
             customerService.saveCustomer(details.getPmBean());
             searchPm.setPmBean(customerService.seach());
         }
-    };
-
-    @PmTitleCfg(title = "Delete")
-    public final PmCommand deleteCommand = new PmCommandImpl(this){
 
         @Override
-        protected void doItImpl() throws Exception {
-
+        protected boolean isPmEnabledImpl() {
+            return details.getPmBean() != null ? true : false;
         }
     };
 
-    public CustomerDialogPm(){
+    @PmTitleCfg(title = "Delete")
+    public final PmCommand deleteCommand = new PmCommandImpl(this) {
+
+        @Override
+        protected void doItImpl() throws Exception {
+            customerService.deleteCustomer(details.getPmBean());
+        }
+
+        @Override
+        protected boolean isPmEnabledImpl() {
+            return details.getPmBean() != null ? true : false;
+        }
+
+    };
+
+    public CustomerDialogPm() {
 
     }
 }

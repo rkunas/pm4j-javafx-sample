@@ -28,6 +28,12 @@ public class CustomerSearchPm extends PmBeanBase<SearchResultDto> {
         }
     };
 
+    @Override
+    public SearchResultDto getPmBean() {
+        CustomerDialogPm dialogPm = (CustomerDialogPm) getPmParent();
+        return dialogPm.customerService.seach();
+    }
+
     public final SearchItemTablePm result = new SearchItemTablePm(this);
 
     public CustomerSearchPm(PmObject parent){

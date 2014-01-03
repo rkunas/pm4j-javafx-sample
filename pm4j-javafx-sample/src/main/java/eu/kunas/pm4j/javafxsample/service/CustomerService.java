@@ -56,8 +56,14 @@ public class CustomerService {
     public void saveCustomer(CustomerDto dto){
         if(dto.getId() == null){
             dto.setId(counter++);
+            System.out.println("Counter" +  counter);
         }
+        db.remove(dto.getId());
         db.put(dto.getId(),dto);
+    }
+
+    public void deleteCustomer(CustomerDto dto){
+        db.remove(dto.getId());
     }
 
     public List<CustomerDto> getAll(){

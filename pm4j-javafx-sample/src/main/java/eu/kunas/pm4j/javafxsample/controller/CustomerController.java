@@ -46,7 +46,6 @@ public class CustomerController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         customerDialogPm.customerService = service;
-        customerDialogPm.init();
 
         results = new MySearchResultTableViewBuilder().withBindPm(customerDialogPm.searchPm).build();
         results.refresh();
@@ -56,9 +55,12 @@ public class CustomerController implements Initializable {
         firstname = new MyTextFieldBuilder().withBindPm(customerDialogPm.details.firstName).build();
         lastname = new MyTextFieldBuilder().withBindPm(customerDialogPm.details.lastName).build();
 
-        saveButton = new MyButtonBuilder().withBindPm(customerDialogPm.saveCommand).withRegisterOnAction(results).withRegisterOnAction(firstname).withRegisterOnAction(lastname).build();
-        newButton = new MyButtonBuilder().withBindPm(customerDialogPm.newCommand).withRegisterOnAction(lastname). withRegisterOnAction(firstname).build();
-        deleteButton = new MyButtonBuilder().withBindPm(customerDialogPm.deleteCommand).build();
+        saveButton = new MyButtonBuilder().withBindPm(customerDialogPm.saveCommand).withRegisterSelfOnAction().withRegisterOnAction(results).withRegisterOnAction(firstname).withRegisterOnAction(lastname).build();
+        newButton = new MyButtonBuilder().withBindPm(customerDialogPm.newCommand).withRegisterOnAction(lastname).withRegisterOnAction(newButton).withRegisterOnAction(saveButton).withRegisterOnAction(firstname).build();
+        deleteButton = new MyButtonBuilder().withBindPm(customerDialogPm.deleteCommand).withRegisterSelfOnAction().withRegisterOnAction(results).build();
+
+        results.registerOnSelectRefresh(saveButton);
+        results.registerOnSelectRefresh(deleteButton);
 
         newButton.refresh();
         saveButton.refresh();
