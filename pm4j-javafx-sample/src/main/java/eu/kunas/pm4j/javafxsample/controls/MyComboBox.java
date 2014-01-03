@@ -5,9 +5,7 @@ import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 
-/**
- * Created by ramazan on 15.11.13.
- */
+
 public class MyComboBox implements MyControl {
 
     @FXML

@@ -6,9 +6,7 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Created by ramazan on 01.01.14.
- */
+
 public class CustomerDialogPmTest {
 
     CustomerService customerService = new CustomerService();

@@ -10,7 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by ramazan on 31.12.13.
+ * This Service could be youre Service.
+ * EJB or Spring Injected Service.
+ *
+ * Created by ramazan
  */
 public class CustomerService {
 

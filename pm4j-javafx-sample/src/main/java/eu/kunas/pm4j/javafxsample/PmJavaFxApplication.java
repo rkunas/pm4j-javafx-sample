@@ -10,6 +10,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * JavaFX and PM4J Example
+ *
+ * Created by ramazan
+ *
+ */
 public class PmJavaFxApplication extends Application {
 
 	private Stage primaryStage;

@@ -22,11 +22,6 @@ import org.pm4j.core.pm.PmMessage.Severity;
 
 import eu.kunas.pm4j.javafxsample.pm.search.SearchItemTableRowPm;
 
-/**
- * Controller fuer Textfelder behandelt die Funktionsweise
- *
- * @author ramazan
- */
 public class MySearchItemTextField implements Initializable, MyControl {
 
     @FXML

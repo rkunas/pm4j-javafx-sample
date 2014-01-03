@@ -8,9 +8,6 @@ import javafx.scene.control.ComboBox;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-/**
- * Created by ramazan on 15.11.13.
- */
 public class MyComboBoxWithoutLabel implements MyControl, Initializable {
 
     @FXML

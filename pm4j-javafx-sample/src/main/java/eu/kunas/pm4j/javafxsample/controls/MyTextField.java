@@ -21,11 +21,6 @@ import org.pm4j.core.pm.PmAttr;
 import org.pm4j.core.pm.PmMessage;
 import org.pm4j.core.pm.PmMessage.Severity;
 
-/**
- * Controller fuer Textfelder behandelt die Funktionsweise
- *
- * @author ramazan
- */
 public class MyTextField implements Initializable, MyControl {
 
     @FXML

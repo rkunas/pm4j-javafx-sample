@@ -9,7 +9,11 @@ import org.pm4j.core.pm.annotation.PmTitleCfg;
 import org.pm4j.core.pm.impl.PmCommandImpl;
 import org.pm4j.core.pm.impl.PmConversationImpl;
 
-
+/**
+ * Main Dialog PM of the Customer Dialog
+ *
+ * Created by ramazan on 09.12.13.
+ */
 public class CustomerDialogPm extends PmConversationImpl {
 
     public CustomerService customerService = new CustomerService();

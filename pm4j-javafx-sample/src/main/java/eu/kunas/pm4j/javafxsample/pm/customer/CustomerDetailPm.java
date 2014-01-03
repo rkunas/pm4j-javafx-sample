@@ -10,6 +10,8 @@ import org.pm4j.core.pm.impl.PmAttrStringImpl;
 import org.pm4j.core.pm.impl.PmBeanImpl;
 
 /**
+ * Detail Pm represents the CustomerDto
+ *
  * Created by ramazan on 09.12.13.
  */
 

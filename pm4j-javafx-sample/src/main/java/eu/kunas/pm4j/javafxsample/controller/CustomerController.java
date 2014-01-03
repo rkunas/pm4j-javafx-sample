@@ -13,7 +13,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * Created by ramazan on 22.11.13.
+ *
+ * Controller for the view and handlers.
+ * Entry Point
+ *
+ * Connection between the UI Components and the Pm Model.
+ *
+ * Created by ramazan
  */
 public class CustomerController implements Initializable {
 

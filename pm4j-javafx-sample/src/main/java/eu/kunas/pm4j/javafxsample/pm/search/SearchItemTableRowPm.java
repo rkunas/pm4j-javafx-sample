@@ -7,6 +7,9 @@ import org.pm4j.core.pm.annotation.PmBeanCfg;
 import org.pm4j.core.pm.impl.PmAttrStringImpl;
 import org.pm4j.core.pm.impl.PmTableRowImpl;
 
+/**
+ * The rows in the table
+ */
 @PmBeanCfg(beanClass = SearchItemDto.class)
 public class SearchItemTableRowPm extends PmTableRowImpl<SearchItemDto> {
 

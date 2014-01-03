@@ -3,6 +3,9 @@ package eu.kunas.pm4j.javafxsample.dto.business;
 import java.io.Serializable;
 
 /**
+ * This can be youre Entity or any other dto.
+ * It is the Business Object.
+ *
  * Created by ramazan on 22.11.13.
  */
 public class CustomerDto implements Serializable{

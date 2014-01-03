@@ -22,11 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-/**
- * Custum Control
- *
- * @author ramazan
- */
 public class MySearchResultTableView implements Initializable, MyControl {
 
     @FXML

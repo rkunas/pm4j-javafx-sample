@@ -10,6 +10,10 @@ import org.pm4j.core.pm.impl.PmBeanBase;
 import org.pm4j.core.pm.impl.PmCommandImpl;
 
 /**
+ *
+ * Conains all Business handlings for the list.
+ * The PM represents the SearchResultDto
+ *
  * Created by ramazan on 24.11.13.
  */
 @PmBeanCfg(beanClass = SearchResultDto.class)

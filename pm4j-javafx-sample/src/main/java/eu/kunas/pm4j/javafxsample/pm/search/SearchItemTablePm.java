@@ -6,6 +6,10 @@ import org.pm4j.core.pm.annotation.PmFactoryCfg;
 import org.pm4j.core.pm.impl.PmTableColImpl2;
 import org.pm4j.core.pm.impl.PmTableImpl2;
 
+/**
+ * The Table reprents the results in the table.
+ *
+ */
 @PmFactoryCfg(beanPmClasses = SearchItemTableRowPm.class)
 public class SearchItemTablePm extends PmTableImpl2<SearchItemTableRowPm, SearchItemDto> {
 
