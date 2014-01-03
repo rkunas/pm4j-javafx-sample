@@ -26,6 +26,10 @@ public class CustomerDetailPm extends PmBeanImpl<CustomerDto> {
     @PmTitleCfg(title = "Lastname")
     public final PmAttrString lastName = new PmAttrStringImpl(this);
 
+    @PmAttrCfg(required = true,minLen = 3)
+    @PmTitleCfg(title = "Mobile")
+    public final PmAttrString mobile = new PmAttrStringImpl(this);
+
     public CustomerDetailPm(PmObject parent){
         super(parent);
     }

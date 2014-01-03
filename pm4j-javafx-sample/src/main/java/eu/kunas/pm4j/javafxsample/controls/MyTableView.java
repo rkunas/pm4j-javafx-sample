@@ -64,7 +64,7 @@ public class MyTableView implements Initializable {
 
         }
         //
-        final List<Object> beanList = new ArrayList<Object>();
+        final List beanList = new ArrayList();
 
         for (final Object o : table2.getRowPms()) {
             final PmTableRow rowPm = (PmTableRow) o;

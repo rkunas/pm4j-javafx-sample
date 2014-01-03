@@ -13,40 +13,32 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- *
  * Controller for the view and handlers.
  * Entry Point
- *
+ * <p/>
  * Connection between the UI Components and the Pm Model.
- *
+ * <p/>
  * Created by ramazan
  */
 public class CustomerController implements Initializable {
 
     CustomerDialogPm customerDialogPm = new CustomerDialogPm();
-
-    @FXML
-    private VBox menu;
-
-    @FXML
-    private VBox content;
-
-    @FXML
-    private Node view;
-
-    @FXML
-    private HBox header;
-
-    private MyTextField firstname;
-    private MyTextField lastname;
-
     MyButton saveButton;
     MyButton newButton;
     MyButton deleteButton;
-
     MySearchResultTableView results;
-
     CustomerService service = new CustomerService();
+    @FXML
+    private VBox menu;
+    @FXML
+    private VBox content;
+    @FXML
+    private Node view;
+    @FXML
+    private HBox header;
+    private MyTextField firstname;
+    private MyTextField lastname;
+    private MyTextField mobile;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -58,12 +50,43 @@ public class CustomerController implements Initializable {
 
         menu.getChildren().add(results.getView());
 
-        firstname = new MyTextFieldBuilder().withBindPm(customerDialogPm.details.firstName).build();
-        lastname = new MyTextFieldBuilder().withBindPm(customerDialogPm.details.lastName).build();
+        // @formatter:off
+        firstname = new MyTextFieldBuilder()
+                .withBindPm(customerDialogPm.details.firstName)
+                .build();
 
-        saveButton = new MyButtonBuilder().withBindPm(customerDialogPm.saveCommand).withRegisterSelfOnAction().withRegisterOnAction(results).withRegisterOnAction(firstname).withRegisterOnAction(lastname).build();
-        newButton = new MyButtonBuilder().withBindPm(customerDialogPm.newCommand).withRegisterOnAction(lastname).withRegisterOnAction(newButton).withRegisterOnAction(saveButton).withRegisterOnAction(firstname).build();
-        deleteButton = new MyButtonBuilder().withBindPm(customerDialogPm.deleteCommand).withRegisterSelfOnAction().withRegisterOnAction(results).build();
+        lastname = new MyTextFieldBuilder()
+                .withBindPm(customerDialogPm.details.lastName)
+                .build();
+
+        mobile = new MyTextFieldBuilder()
+                .withBindPm(customerDialogPm.details.mobile)
+                .build();
+
+        saveButton = new MyButtonBuilder()
+                .withBindPm(customerDialogPm.saveCommand)
+                .withRegisterSelfOnAction()
+                .withRegisterOnAction(results)
+                .withRegisterOnAction(firstname)
+                .withRegisterOnAction(lastname)
+                .withRegisterOnAction(mobile)
+                .build();
+
+        newButton = new MyButtonBuilder()
+                .withBindPm(customerDialogPm.newCommand)
+                .withRegisterOnAction(lastname)
+                .withRegisterOnAction(newButton)
+                .withRegisterOnAction(saveButton)
+                .withRegisterOnAction(firstname)
+                .withRegisterOnAction(mobile)
+                .build();
+
+        deleteButton = new MyButtonBuilder()
+                .withBindPm(customerDialogPm.deleteCommand)
+                .withRegisterSelfOnAction()
+                .withRegisterOnAction(results)
+                .build();
+        // @formatter:on
 
         results.registerOnSelectRefresh(saveButton);
         results.registerOnSelectRefresh(deleteButton);
@@ -72,13 +95,13 @@ public class CustomerController implements Initializable {
         saveButton.refresh();
         deleteButton.refresh();
 
-
         header.getChildren().add(newButton.getView());
         header.getChildren().add(saveButton.getView());
         header.getChildren().add(deleteButton.getView());
 
         results.registerOnSelectRefresh(firstname);
         results.registerOnSelectRefresh(lastname);
+        results.registerOnSelectRefresh(mobile);
 
         content.getChildren().add(firstname.getView());
         content.getChildren().add(lastname.getView());
