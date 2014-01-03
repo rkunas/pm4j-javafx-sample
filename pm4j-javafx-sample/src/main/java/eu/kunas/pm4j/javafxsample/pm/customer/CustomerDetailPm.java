@@ -18,11 +18,11 @@ import org.pm4j.core.pm.impl.PmBeanImpl;
 @PmBeanCfg(beanClass = CustomerDto.class)
 public class CustomerDetailPm extends PmBeanImpl<CustomerDto> {
 
-    @PmAttrCfg(required = true)
+    @PmAttrCfg(required = true,minLen = 3)
     @PmTitleCfg(title = "Firstname")
     public final PmAttrString firstName = new PmAttrStringImpl(this);
 
-    @PmAttrCfg(required = true)
+    @PmAttrCfg(required = true,minLen = 3)
     @PmTitleCfg(title = "Lastname")
     public final PmAttrString lastName = new PmAttrStringImpl(this);
 

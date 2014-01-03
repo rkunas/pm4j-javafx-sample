@@ -8,14 +8,13 @@ import org.pm4j.core.pm.impl.PmTableImpl2;
 
 /**
  * The Table reprents the results in the table.
- *
  */
 @PmFactoryCfg(beanPmClasses = SearchItemTableRowPm.class)
 public class SearchItemTablePm extends PmTableImpl2<SearchItemTableRowPm, SearchItemDto> {
 
-	public SearchItemTablePm(final PmObject pmParent) {
-		super(pmParent);
-	}
+    public SearchItemTablePm(final PmObject pmParent) {
+        super(pmParent);
+    }
 
-	public PmTableColImpl2 field = new PmTableColImpl2(this);
+    public PmTableColImpl2 field = new PmTableColImpl2(this);
 }

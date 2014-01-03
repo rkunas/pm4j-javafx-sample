@@ -1,9 +1,6 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import java.net.URL;
-import java.util.List;
-import java.util.ResourceBundle;
-
+import eu.kunas.pm4j.javafxsample.pm.search.SearchItemTableRowPm;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.Event;
@@ -16,11 +13,12 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
-
 import org.pm4j.core.pm.PmMessage;
 import org.pm4j.core.pm.PmMessage.Severity;
 
-import eu.kunas.pm4j.javafxsample.pm.search.SearchItemTableRowPm;
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
 
 public class MySearchItemTextField implements Initializable, MyControl {
 

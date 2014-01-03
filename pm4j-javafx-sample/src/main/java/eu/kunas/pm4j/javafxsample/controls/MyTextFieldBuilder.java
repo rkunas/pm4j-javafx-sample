@@ -1,8 +1,7 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import org.pm4j.core.pm.PmAttr;
-
 import eu.kunas.pm4j.javafxsample.utilities.PageLoader;
+import org.pm4j.core.pm.PmAttr;
 
 public class MyTextFieldBuilder {
 

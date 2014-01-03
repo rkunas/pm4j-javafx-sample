@@ -1,8 +1,7 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import org.pm4j.core.pm.PmCommand;
-
 import eu.kunas.pm4j.javafxsample.utilities.PageLoader;
+import org.pm4j.core.pm.PmCommand;
 
 public class MyButtonBuilder {
 

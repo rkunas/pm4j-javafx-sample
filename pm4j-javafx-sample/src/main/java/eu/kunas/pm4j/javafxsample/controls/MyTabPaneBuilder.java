@@ -1,8 +1,7 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import org.pm4j.core.pm.PmTabSet2;
-
 import eu.kunas.pm4j.javafxsample.utilities.PageLoader;
+import org.pm4j.core.pm.PmTabSet2;
 
 public class MyTabPaneBuilder {
 

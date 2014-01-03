@@ -6,7 +6,6 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
-
 import org.joda.time.LocalDateTime;
 
 public class MyDateTimeLabel extends Label {

@@ -5,11 +5,10 @@ import java.io.Serializable;
 /**
  * This can be youre Entity or any other dto.
  * It is the Business Object.
- *
+ * <p/>
  * Created by ramazan on 22.11.13.
  */
-public class CustomerDto implements Serializable{
-
+public class CustomerDto implements Serializable {
 
 
     private Long id;
@@ -18,8 +17,18 @@ public class CustomerDto implements Serializable{
 
     private String lastName;
 
-    public CustomerDto(){
+    private String mobile;
 
+    public CustomerDto() {
+
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
     public Long getId() {

@@ -12,31 +12,30 @@ import java.io.InputStream;
 
 /**
  * JavaFX and PM4J Example
- *
+ * <p/>
  * Created by ramazan
- *
  */
 public class PmJavaFxApplication extends Application {
 
-	private Stage primaryStage;
+    private Stage primaryStage;
 
-	@SuppressWarnings("resource")
-	@Override
-	public void start(final Stage p) throws Exception {
-		this.primaryStage = p;
+    @SuppressWarnings("resource")
+    @Override
+    public void start(final Stage p) throws Exception {
+        this.primaryStage = p;
         CustomerController controller = (CustomerController) loadController("/eu/kunas/pm4j/javafxsample/controller/CustomerController.fxml");
 
-		Scene scene = new Scene((Parent)controller.getView(),600, 400);
+        Scene scene = new Scene((Parent) controller.getView(), 600, 400);
         Application.setUserAgentStylesheet(Application.STYLESHEET_MODENA);
 
-		this.primaryStage.setTitle("pm4j-javafx-sample");
-		this.primaryStage.setScene(scene);
-		this.primaryStage.show();
-	}
+        this.primaryStage.setTitle("pm4j-javafx-sample");
+        this.primaryStage.setScene(scene);
+        this.primaryStage.show();
+    }
 
-	public static void main(final String[] args) {
-		Application.launch(args);
-	}
+    public static void main(final String[] args) {
+        Application.launch(args);
+    }
 
     protected Object loadController(final String url) throws IOException {
         InputStream fxmlStream = null;

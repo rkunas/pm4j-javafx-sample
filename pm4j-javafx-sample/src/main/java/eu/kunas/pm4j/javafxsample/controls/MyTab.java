@@ -1,12 +1,11 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javafx.scene.Node;
 import javafx.scene.control.Tab;
-
 import org.pm4j.core.pm.PmTab;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyTab extends Tab implements MyControl {
 

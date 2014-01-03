@@ -1,6 +1,5 @@
 package eu.kunas.pm4j.javafxsample.pm.customer;
 
-import eu.kunas.pm4j.javafxsample.pm.customer.CustomerDialogPm;
 import eu.kunas.pm4j.javafxsample.service.CustomerService;
 import junit.framework.Assert;
 import org.junit.Before;
@@ -14,18 +13,18 @@ public class CustomerDialogPmTest {
     CustomerDialogPm customerDialogPm = new CustomerDialogPm();
 
     @Before
-    public void before(){
+    public void before() {
         customerDialogPm.customerService = customerService;
 
     }
 
     @Test
-    public void testSearchResult(){
+    public void testSearchResult() {
         Assert.assertNotNull(customerDialogPm.searchPm.getPmBean());
     }
 
     @Test
-    public void testNewCommand(){
+    public void testNewCommand() {
         customerDialogPm.newCommand.doIt();
 
         Assert.assertNotNull(customerDialogPm.details.getPmBean());
@@ -35,6 +34,6 @@ public class CustomerDialogPmTest {
         customerDialogPm.details.lastName.setValueAsString("Test1");
         customerDialogPm.saveCommand.doIt();
 
-        Assert.assertEquals(3,customerService.seach().getResultSet().size());
+        Assert.assertEquals(3, customerService.seach().getResultSet().size());
     }
 }

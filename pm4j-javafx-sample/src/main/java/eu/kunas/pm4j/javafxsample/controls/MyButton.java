@@ -1,16 +1,15 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
-
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
-
 import org.pm4j.core.pm.PmCommand;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
 
 public class MyButton implements Initializable, MyControl {
 
@@ -43,7 +42,7 @@ public class MyButton implements Initializable, MyControl {
         if (this.doItControls == null) {
             this.doItControls = new ArrayList<MyControl>();
         }
-        if(control != null){
+        if (control != null) {
             this.doItControls.add(control);
         }
 

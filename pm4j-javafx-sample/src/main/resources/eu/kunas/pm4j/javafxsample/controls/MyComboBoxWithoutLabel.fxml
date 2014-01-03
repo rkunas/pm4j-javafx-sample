@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.collections.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
-
 <AnchorPane id="AnchorPane" fx:id="view" maxHeight="30.0" maxWidth="220.0" minHeight="30.0" minWidth="220.0" prefHeight="30.0" prefWidth="220.0" xmlns:fx="http://javafx.com/fxml" fx:controller="eu.kunas.pm4j.javafxsample.controls.MyComboBoxWithoutLabel">
   <children>
     <HBox prefHeight="53.999900000002526" prefWidth="350.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

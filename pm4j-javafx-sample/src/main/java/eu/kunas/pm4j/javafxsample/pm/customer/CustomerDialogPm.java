@@ -11,7 +11,7 @@ import org.pm4j.core.pm.impl.PmConversationImpl;
 
 /**
  * Main Dialog PM of the Customer Dialog
- *
+ * <p/>
  * Created by ramazan on 09.12.13.
  */
 public class CustomerDialogPm extends PmConversationImpl {

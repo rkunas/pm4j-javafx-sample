@@ -12,16 +12,16 @@ import java.util.Map;
 /**
  * This Service could be youre Service.
  * EJB or Spring Injected Service.
- *
+ * <p/>
  * Created by ramazan
  */
 public class CustomerService {
 
-    Map<Long,CustomerDto> db = new HashMap<Long,CustomerDto>();
+    Map<Long, CustomerDto> db = new HashMap<Long, CustomerDto>();
 
     Long counter = 1L;
 
-    public CustomerService(){
+    public CustomerService() {
 
         CustomerDto c1 = new CustomerDto();
         c1.setId(counter++);
@@ -33,15 +33,15 @@ public class CustomerService {
         c2.setFirstName("Tracy");
         c2.setLastName("Bloomberg");
 
-        db.put(c1.getId(),c1);
-        db.put(c2.getId(),c2);
+        db.put(c1.getId(), c1);
+        db.put(c2.getId(), c2);
     }
 
-    public SearchResultDto seach(){
+    public SearchResultDto seach() {
         SearchResultDto resultDto = new SearchResultDto();
         resultDto.getLabels().add("Name");
 
-        for (CustomerDto customer : db.values()){
+        for (CustomerDto customer : db.values()) {
             SearchResultItemDto item = new SearchResultItemDto();
 
             item.setKey(new BusinessKey(customer.getId()));
@@ -52,25 +52,25 @@ public class CustomerService {
         return resultDto;
     }
 
-    public CustomerDto getCustomer(Long id){
+    public CustomerDto getCustomer(Long id) {
         return db.get(id);
     }
 
-    public void saveCustomer(CustomerDto dto){
-        if(dto.getId() == null){
+    public void saveCustomer(CustomerDto dto) {
+        if (dto.getId() == null) {
             dto.setId(counter++);
-            System.out.println("Counter" +  counter);
+            System.out.println("Counter" + counter);
         }
         db.remove(dto.getId());
-        db.put(dto.getId(),dto);
+        db.put(dto.getId(), dto);
     }
 
-    public void deleteCustomer(CustomerDto dto){
+    public void deleteCustomer(CustomerDto dto) {
         db.remove(dto.getId());
     }
 
-    public List<CustomerDto> getAll(){
-        return ( List<CustomerDto> )db.values();
+    public List<CustomerDto> getAll() {
+        return (List<CustomerDto>) db.values();
     }
 
 }

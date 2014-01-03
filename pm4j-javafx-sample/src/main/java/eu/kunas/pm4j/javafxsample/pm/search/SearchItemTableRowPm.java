@@ -13,15 +13,15 @@ import org.pm4j.core.pm.impl.PmTableRowImpl;
 @PmBeanCfg(beanClass = SearchItemDto.class)
 public class SearchItemTableRowPm extends PmTableRowImpl<SearchItemDto> {
 
-	@PmAttrCfg(readOnly = true)
-	public PmAttrString title = new PmAttrStringImpl(this);
+    @PmAttrCfg(readOnly = true)
+    public PmAttrString title = new PmAttrStringImpl(this);
 
-	@PmAttrCfg(readOnly = true)
-	public PmAttrString field = new PmAttrStringImpl(this);
+    @PmAttrCfg(readOnly = true)
+    public PmAttrString field = new PmAttrStringImpl(this);
 
-	public PmAttrString value = new PmAttrStringImpl(this);
+    public PmAttrString value = new PmAttrStringImpl(this);
 
-	public SearchItemTableRowPm() {
-	}
+    public SearchItemTableRowPm() {
+    }
 
 }

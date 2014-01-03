@@ -1,8 +1,7 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import org.pm4j.core.pm.PmObject;
-
 import eu.kunas.pm4j.javafxsample.utilities.PageLoader;
+import org.pm4j.core.pm.PmObject;
 
 public class MySearchResultTableViewBuilder {
 

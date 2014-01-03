@@ -1,7 +1,6 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
 import javafx.scene.Node;
-
 import org.pm4j.core.pm.PmTab;
 
 public class MyTabBuilder {

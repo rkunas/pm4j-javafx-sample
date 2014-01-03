@@ -10,43 +10,43 @@ import java.net.URL;
 
 /**
  * This is an FXML Page Loader
- * 
+ *
  * @author Ramazan
  */
 public class PageLoader {
 
-	public static Object loadContent(final String fxml) {
-		try {
-			final URL url = PmJavaFxApplication.class.getResource(fxml);
-			final Object page = FXMLLoader.load(url, null, new JavaFXBuilderFactory());
+    public static Object loadContent(final String fxml) {
+        try {
+            final URL url = PmJavaFxApplication.class.getResource(fxml);
+            final Object page = FXMLLoader.load(url, null, new JavaFXBuilderFactory());
 
-			return page;
-		} catch (final Exception e) {
-			e.printStackTrace();
-			return null;
-		}
+            return page;
+        } catch (final Exception e) {
+            e.printStackTrace();
+            return null;
+        }
 
-	}
+    }
 
-	public  Object loadController(final String url) {
-		final InputStream fxmlStream = null;
-		try {
-			final FXMLLoader loader = new FXMLLoader();
+    public Object loadController(final String url) {
+        final InputStream fxmlStream = null;
+        try {
+            final FXMLLoader loader = new FXMLLoader();
 
-			try {
-				loader.load(getClass().getResourceAsStream(url));
-			} catch (final IOException e) {
-				e.printStackTrace();
-			}
-			return loader.getController();
-		} finally {
-			if (fxmlStream != null) {
-				try {
-					fxmlStream.close();
-				} catch (final IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	}
+            try {
+                loader.load(getClass().getResourceAsStream(url));
+            } catch (final IOException e) {
+                e.printStackTrace();
+            }
+            return loader.getController();
+        } finally {
+            if (fxmlStream != null) {
+                try {
+                    fxmlStream.close();
+                } catch (final IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }

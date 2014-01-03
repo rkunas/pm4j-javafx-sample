@@ -1,10 +1,10 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javafx.scene.Node;
 import javafx.scene.layout.VBox;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyVBox implements MyControl {
 

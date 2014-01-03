@@ -1,14 +1,13 @@
 package eu.kunas.pm4j.javafxsample.controls;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.TabPane;
-
 import org.pm4j.core.pm.PmTab;
 import org.pm4j.core.pm.PmTabSet2;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyTabPane implements MyControl {
 
