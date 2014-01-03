@@ -27,7 +27,7 @@ public class PmJavaFxApplication extends Application {
 
         Scene scene = new Scene((Parent) controller.getView(), 600, 400);
         Application.setUserAgentStylesheet(Application.STYLESHEET_MODENA);
-
+        scene.getStylesheets().add("/style.css");
         this.primaryStage.setTitle("pm4j-javafx-sample");
         this.primaryStage.setScene(scene);
         this.primaryStage.show();

@@ -22,6 +22,7 @@ public class CustomerDialogPm extends PmConversationImpl {
 
     public final CustomerSearchPm searchPm = new CustomerSearchPm(this);
 
+    @PmCommandCfg(beforeDo = PmCommandCfg.BEFORE_DO.DO_NOTHING)
     @PmTitleCfg(title = "New")
     public final PmCommand newCommand = new PmCommandImpl(this) {
 
@@ -48,6 +49,7 @@ public class CustomerDialogPm extends PmConversationImpl {
         }
     };
 
+    @PmCommandCfg(beforeDo = PmCommandCfg.BEFORE_DO.DO_NOTHING)
     @PmTitleCfg(title = "Delete")
     public final PmCommand deleteCommand = new PmCommandImpl(this) {
 

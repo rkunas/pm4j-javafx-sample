@@ -5,6 +5,7 @@ import eu.kunas.pm4j.javafxsample.dto.search.SearchResultItemDto;
 import eu.kunas.pm4j.javafxsample.pm.customer.CustomerDialogPm;
 import org.pm4j.core.pm.PmObject;
 import org.pm4j.core.pm.annotation.PmBeanCfg;
+import org.pm4j.core.pm.annotation.PmCommandCfg;
 import org.pm4j.core.pm.impl.PmBeanBase;
 import org.pm4j.core.pm.impl.PmCommandImpl;
 
@@ -17,6 +18,7 @@ import org.pm4j.core.pm.impl.PmCommandImpl;
 @PmBeanCfg(beanClass = SearchResultDto.class)
 public class CustomerSearchPm extends PmBeanBase<SearchResultDto> {
 
+    @PmCommandCfg(beforeDo = PmCommandCfg.BEFORE_DO.DO_NOTHING)
     public final PmCommandImpl viewCommand = new PmCommandImpl(this) {
 
         @Override

@@ -105,6 +105,7 @@ public class CustomerController implements Initializable {
 
         content.getChildren().add(firstname.getView());
         content.getChildren().add(lastname.getView());
+        content.getChildren().add(mobile.getView());
 
     }
 
