@@ -4,6 +4,7 @@ import eu.kunas.pm4j.javafxsample.dto.business.CustomerDto;
 import eu.kunas.pm4j.javafxsample.pm.search.CustomerSearchPm;
 import eu.kunas.pm4j.javafxsample.service.CustomerService;
 import org.pm4j.core.pm.PmCommand;
+import org.pm4j.core.pm.annotation.PmCommandCfg;
 import org.pm4j.core.pm.annotation.PmTitleCfg;
 import org.pm4j.core.pm.impl.PmCommandImpl;
 import org.pm4j.core.pm.impl.PmConversationImpl;
@@ -32,6 +33,7 @@ public class CustomerDialogPm extends PmConversationImpl {
     };
 
     @PmTitleCfg(title = "Save")
+    @PmCommandCfg(beforeDo = PmCommandCfg.BEFORE_DO.VALIDATE)
     public  final PmCommand saveCommand = new PmCommandImpl(this){
 
         @Override
