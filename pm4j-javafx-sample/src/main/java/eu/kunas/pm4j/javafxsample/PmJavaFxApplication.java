@@ -25,7 +25,7 @@ public class PmJavaFxApplication extends Application {
         this.primaryStage = p;
         CustomerController controller = (CustomerController) loadController("/eu/kunas/pm4j/javafxsample/controller/CustomerController.fxml");
 
-        Scene scene = new Scene((Parent) controller.getView(), 600, 400);
+        Scene scene = new Scene((Parent) controller.getView(), 700, 400);
         Application.setUserAgentStylesheet(Application.STYLESHEET_MODENA);
         scene.getStylesheets().add("/style.css");
         this.primaryStage.setTitle("pm4j-javafx-sample");

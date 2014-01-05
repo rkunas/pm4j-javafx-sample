@@ -25,16 +25,23 @@ public class CustomerService {
 
         CustomerDto c1 = new CustomerDto();
         c1.setId(counter++);
-        c1.setFirstName("Antony");
-        c1.setLastName("Marcs");
+        c1.setFirstName("Martin");
+        c1.setLastName("Fowler");
 
         CustomerDto c2 = new CustomerDto();
         c2.setId(counter++);
-        c2.setFirstName("Tracy");
-        c2.setLastName("Bloomberg");
+        c2.setFirstName("Olaf");
+        c2.setLastName("Boede");
+
+        CustomerDto c3 = new CustomerDto();
+        c3.setId(counter++);
+        c3.setFirstName("Ramazan");
+        c3.setLastName("Kunas");
+        c3.setMobile("0157800000");
 
         db.put(c1.getId(), c1);
         db.put(c2.getId(), c2);
+        db.put(c3.getId(), c3);
     }
 
     public SearchResultDto seach() {
