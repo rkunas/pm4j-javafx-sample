@@ -85,6 +85,9 @@ public class CustomerController implements Initializable {
                 .withBindPm(customerDialogPm.deleteCommand)
                 .withRegisterSelfOnAction()
                 .withRegisterOnAction(results)
+                .withRegisterOnAction(lastname)
+                .withRegisterOnAction(firstname)
+                .withRegisterOnAction(mobile)
                 .build();
         // @formatter:on
 

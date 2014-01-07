@@ -32,9 +32,9 @@
 					<keyStoreAlias>eu.kunas</keyStoreAlias>
 					<keyStorePassword>thinkerlab</keyStorePassword>
 
-					<permissions>
+					<!--permissions>
 						<permission>all-permissions</permission>
-					</permissions>
+					</permissions -->
 
 				</configuration>
 			</plugin>
@@ -47,13 +47,13 @@
 		<dependency>
 			<groupId>org.pm4j</groupId>
 			<artifactId>pm4j-core</artifactId>
-			<version>0.6.27-SNAPSHOT</version>
+			<version>0.6.59-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.pm4j</groupId>
 			<artifactId>pm4j-common</artifactId>
-			<version>0.6.27-SNAPSHOT</version>
+			<version>0.6.59-SNAPSHOT</version>
 		</dependency>
 
 

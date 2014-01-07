@@ -34,6 +34,6 @@ public class CustomerDialogPmTest {
         customerDialogPm.details.lastName.setValueAsString("Test1");
         customerDialogPm.saveCommand.doIt();
 
-        Assert.assertEquals(3, customerService.seach().getResultSet().size());
+        Assert.assertEquals(4, customerService.seach().getResultSet().size());
     }
 }

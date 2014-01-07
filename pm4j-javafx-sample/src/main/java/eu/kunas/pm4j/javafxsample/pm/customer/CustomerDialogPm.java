@@ -56,6 +56,7 @@ public class CustomerDialogPm extends PmConversationImpl {
         @Override
         protected void doItImpl() throws Exception {
             customerService.deleteCustomer(details.getPmBean());
+            details.setPmBean(null);
         }
 
         @Override
